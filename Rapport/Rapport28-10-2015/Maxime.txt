@@ -1,0 +1,11 @@
+Rapport du 28/10/2015:
+
+	A 9h15 on a organisé une mini réunion avec le Groupe de l'ESCAA pour parler du cahier des charges et de la maquette de l'application.
+	J'ai tout d'abord avec mon groupe crée un Trello afin d'organiser notre projet.
+	Dans ce même Trello, j'ai crée plusieurs users stories.
+	J'ai crée mon compte github et j'ai rejoins le git "StartupMobilite". Ensuite j'ai rejoins le dossier que mon groupe a crée "Connect-finance".
+	J'ai appris les premières commandes en git afin d'ajouter et de modifier les fichiers dans git.
+	Ensuite j'ai lancé le téléchargement ainsi que l'installation de plusieurs logiciels ( Visual studio, Xamarin, Resharper).
+	Création d'un début de schéma de base de données en groupe.
+	Téléchargement et installation de MysqlWorkbench afin de mettre au propre la base de données.
+	Ajout de ce magnifique rapport au dossier Rapport dans le git.
