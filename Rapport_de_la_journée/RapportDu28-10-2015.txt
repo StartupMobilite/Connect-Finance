@@ -1,0 +1,6 @@
+-> Création du Trello
+-> Téléchargement Visual Studio & Xamarin
+-> Création dossier Documentation sur GitHub
+-> Meeting avec le groupe de l'ESCAA (Vision de l'application, questionnement technique)
+-> Création dossier Rapport (Qui comprendra les rapports journalier des jours de Labos)
+-> Création d'un bref schéma de la base 
