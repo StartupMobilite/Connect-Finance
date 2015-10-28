@@ -3,4 +3,4 @@
 -> Prise en main de GitHub (tutorial/cours/tests)
 -> Meeting avec le groupe de l'ESCAA pour discuter du cahier des charges et de leur vision de l'application et des fonctionnalités
 -> Participation à une première ébauche de la modélisation de la base de donnée pour l'instant (pas encore mise en ligne car vraiment supperficiel en attendant de la modéliser sur workbench)
--> Apprentissage de C# (n'ayant aucune base dans ce langage, j'ai passé une bonne partie de la journée sur un tutorial sur openclassroom)
+-> Apprentissage de C# (n'ayant aucune base dans ce langage, j'ai passé une bonne partie de la journée sur un tutorial sur openclassroom. Je me suis arrêté ici : https://openclassrooms.com/courses/apprenez-a-developper-en-c/utilisez-le-framework-net)
