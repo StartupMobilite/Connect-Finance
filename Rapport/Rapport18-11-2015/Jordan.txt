@@ -1,8 +1,10 @@
 -> Aide conception UML pour Maxime
+-> Mise à jour Trello
 -> Premier jet de la base de données (Je pense qu'elle évolura au fur et a mesure de l'avancement du projet)
 -> Suivit du cours sur les API (voir /Documentation/API.txt)
 -> Suivit cours CS + Xamarin (voir /Documentation/CS.txt) (Connaissant déjà un peu CS, j'ai noté ce que je ne savais pas :) ) 
 -> Création de la base du projet sous visual studio. 
+
 
 -------------------------------------------------------------------------------------------------------------
 					PAS EU LE TEMPS DE FAIRE 
