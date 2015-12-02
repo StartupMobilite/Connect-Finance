@@ -1,0 +1,7 @@
+-> Création d'une solution visual studio
+-> Lecture d'un cours Xamarin.Form + vidéos (https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/, https://mva.microsoft.com/training-courses/developper-une-application-cross-plateformes-avec-xamarin, etc...)
+-> Début de création de notre première page (vue) en XAML mais nous avons dû supprimer le projet et le recréer à l'instant à cause d'un .gitignore manquant...
+-> Installation d'Android player et d'Hyper-V vu que nous n'avons pas réussi à faire marcher android player avec visual studio
+-> Paramétrage de la solution VS2015 (dans les propriétés de l'androidManifest, dans "action de génération", il y avait l'option Contenu de séléctionnée, nous l'avons mis à "Aucun" car celle ci empêchait VS2015 de générer la solution, nous avons passé une bonne partie de la matinée là dessus avec Anthony).
+
+En fait, j'ai passé la journée à lire des tutos sur Xamarin et à régler des bugs au niveau de la solution. Nous pusherons du code la prochaine fois maintenant que les bugs niveau solution sont réglés.
