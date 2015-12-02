@@ -9,3 +9,13 @@ C:\Users\Nicolas\Documents\GitHub\Connect-Finance\ConnectFinance\ConnectFinance\
 C:\Users\Nicolas\Documents\GitHub\Connect-Finance\ConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\obj\Debug\ConnectFinance.pdb
 C:\Users\Nicolas\Documents\GitHub\Connect-Finance\ConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\obj\Debug\ConnectFinance.dll.mdb
 C:\Users\Nicolas\Documents\GitHub\Connect-Finance\ConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\bin\Debug\ConnectFinance.dll.mdb
+C:\ProjetConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\bin\Debug\ConnectFinance.dll
+C:\ProjetConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\bin\Debug\ConnectFinance.pdb
+C:\ProjetConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\bin\Debug\Xamarin.Forms.Core.dll
+C:\ProjetConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\ProjetConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\bin\Debug\Xamarin.Forms.Core.xml
+C:\ProjetConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\ProjetConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\obj\Debug\ConnectFinance.csprojResolveAssemblyReference.cache
+C:\ProjetConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\obj\Debug\TestPage.xaml.g.cs
+C:\ProjetConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\obj\Debug\ConnectFinance.dll
+C:\ProjetConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\ConnectFinance\obj\Debug\ConnectFinance.pdb
