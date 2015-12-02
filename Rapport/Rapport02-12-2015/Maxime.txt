@@ -1,0 +1,17 @@
+Rapport
+
+
+
+
+Ajout d'une user story sur le trello
+Amélioration de l'UML
+Ajout de l'amélioration de l'UML sur le Git.
+Démarrage d'un tutoriel concernant Xamarin : (https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)
+Je me suis arrêté au milieu de la partie 1.
+Ajout du rapport sur le Git.
+
+
+
+
+
+
