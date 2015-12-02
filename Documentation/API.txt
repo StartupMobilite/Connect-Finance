@@ -1,0 +1,15 @@
+REST = Design patern -> Ajout, supression, modification 
+API -> sort au format XML, JSON 
+
+POST -> Requete creer
+GET -> Requete pour récupéré
+PUT -> Requete mis a jour
+DELETE -> requete pour supprimer
+
+Données statiques, données temps "réels" (+- quelques minutes)
+
+
+Résumé : 
+
+API -> Sert à récupérer des informations depuis un services web sous forme de JSON ou XML, le but étant après de parser ce JSON ou XML pour afficher les informations voulut. 
+

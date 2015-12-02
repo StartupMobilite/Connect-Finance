@@ -1,0 +1,2 @@
+-> Penser à bien découper son code avec les différents dossiers (View, ViewModel, Buisness, Services)
+-> Utiliser Xamarin.Forms Portable 
