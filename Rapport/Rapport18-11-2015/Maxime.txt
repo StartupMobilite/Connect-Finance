@@ -1,0 +1,8 @@
+Rapport du 18/11/2015:
+
+	9h10 - On a tout d'abord décidé en groupe les tâches à faire pour la journée.
+	J'ai ajouté ma tâche a faire au trello.
+	9h30->12h30 - Je me suis occupé de la modélisation de la base de donnée.
+	13h30->15h00 - J'ai suivi le cour concernant les API.
+	15h15->17h00 - Cour sur les bases de C#.
+	J'ai finis par ajouter ma modélisation et mon rapport au git.
