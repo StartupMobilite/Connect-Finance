@@ -1,0 +1,5 @@
+Suppression de l'ancienne solution (elle était en shared, on la veut en portable)
+Réinstallation de Xamarin (Bug à cause de mon passage sous Win10)
+Aide Maxime sur l'UML 
+Travaille avec Nico sur la prise en main de Xamarin (il était absent la semaine derniere) 
+Résolution bug Git pour Maxime et Nicos 
