@@ -1,0 +1,5 @@
+- Conférence microsoft le matin (obligatoire)
+- Création encore une fois de la solution... cette fois ci c'est la bonne on espère... (on a passé le projet en Shared pour éviter certains problèmes)
+- Création de vues (layout et connexion mais on a un souci avec un label qui n'apparait pas)
+- Tentatives pour faire marcher Hyper-V, Android player, etc... mais rien à faire => pc à reformater -_-
+- Documentation sur xamarin form (stack layout notamment)
