@@ -1,0 +1,27 @@
+J'ai du installer le sdk windows dans visual studio, donc pdt l'instal, j'ai coder ça vite fais (xaml pour formulaire d'inscription)
+
+
+
+
+<ContentPage.Content>
+	<StackLayout>
+		<Label Text="Nom :"
+		<TextBox x:Name="txtBxNom"></TextBox>
+		<Label Text="Prenom :"
+		<TextBox x:Name="txtBxPrenom"></TextBox>
+		<Label Text="Pseudo :"
+		<TextBox x:Name="txtBxPseudo"></TextBox>
+		<Label Text="Age :"
+		<TextBox x:Name="txtBxAge"></TextBox>
+		<Label Text="Mail :"
+		<TextBox x:Name="txtBxMail"></TextBox>
+		<Label Text="Mot de passe :"
+		<TextBox x:Name="txtBxPassword"></TextBox>
+		<Label Text="Confirmation mot de passe :"
+		<TextBox x:Name="txtBxConfirmPassword"></TextBox>
+		<Label Text="Mot de passe :"
+		<TextBox x:Name="txtBxPassword"></TextBox>
+	</StackLayout>
+</ContentPage.Content>
+
+
