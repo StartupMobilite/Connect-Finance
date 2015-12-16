@@ -13,6 +13,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ConnectFinance_1", "Connect
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ConnectFinance_1\ConnectFinance_1\ConnectFinance_1.projitems*{50e02d2f-9af5-460e-adfd-5842103780d3}*SharedItemsImports = 4
 		ConnectFinance_1\ConnectFinance_1\ConnectFinance_1.projitems*{42537121-0906-42f6-b961-35021a1f6032}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
