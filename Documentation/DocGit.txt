@@ -1,0 +1,23 @@
+Tips
+
+Pour récupérer le travail qui a été fait en votre absence :
+
+$ git checkout master
+puis :
+$ git fetch --all 
+puis :
+$ git pull origin master  
+puis :
+$ git checkout [ma branche]  
+et efin :
+$ git merge master 
+
+
+Pour commit : 
+
+$ git add -A : ajoute tous les fichiers modifiés pour commit. /!\ à utiliser avec précaution /!\
+
+$ git commit -m “[dossier modifié] | [modifications apportées]” : commit les fichiers précédement ajoutés.
+
+$ git push origin [nom de ma branche]  : push le ou les commits sur le repo git. /!\ Attention à ne pusher que sur votre branche /!\
+
