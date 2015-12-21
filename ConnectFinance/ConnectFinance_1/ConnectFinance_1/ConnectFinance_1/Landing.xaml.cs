@@ -14,5 +14,15 @@ namespace ConnectFinance_1
 		{
 			InitializeComponent ();
 		}
-	}
+
+        void OnButtonConnexionClicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new Connexion();
+        }
+
+        void OnButtonInscriptionClicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new Inscription();
+        }
+    }
 }

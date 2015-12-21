@@ -11,8 +11,8 @@ namespace ConnectFinance_1
 	{
 		public App ()
 		{
-			// The root page of your application
-			MainPage = new Landing();
+            // The root page of your application
+            MainPage = new Landing();
 		}
 
 		protected override void OnStart ()
