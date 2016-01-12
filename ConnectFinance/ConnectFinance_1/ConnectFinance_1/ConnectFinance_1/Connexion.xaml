@@ -2,17 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ConnectFinance_1.Connexion">
-  <ContentPage.Content>
-    <StackLayout>
-      <StackLayout.Children>
-        <Label Text="Logo" VerticalOptions="Start"/>
-        <StackLayout VerticalOptions="CenterAndExpand">
-          <StackLayout.Children>
-            <Button x:Name="btnEntrepreneur" Text="Je suis entrepreneur"></Button>
-            <Button x:Name="btnInvestisseur" Text="Je suis investisseur"></Button>
-          </StackLayout.Children>
-        </StackLayout>
-      </StackLayout.Children>
-    </StackLayout>
-  </ContentPage.Content>
+	<ContentPage.Content>
+		<StackLayout>
+			<StackLayout.Children>
+				<Label Text="Logo" VerticalOptions="Start"/>
+				<StackLayout VerticalOptions="CenterAndExpand">
+					<StackLayout.Children>
+						<Entry x:Name="adresse_mail" Placeholder="Adresse mail"/>
+						<Entry x:Name="password" Placeholder="Mot de passe"/>
+					</StackLayout.Children>
+				</StackLayout>
+				<Button Text="Facebook"/>
+				<Button Text="LinkedIn"/>
+				<Button Text="Google"/>
+			</StackLayout.Children>
+		</StackLayout>
+	</ContentPage.Content>
 </ContentPage>
