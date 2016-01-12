@@ -14,5 +14,14 @@ namespace ConnectFinance_1
 		{
 			InitializeComponent ();
 		}
+		private void BtnEntrepreneur_OnClicked(object sender, EventArgs e)
+		{
+			Application.Current.MainPage = new FormInscriEntrepreneur();
+		}
+
+		private void BtnInvestisseur_OnClicked(object sender, EventArgs e)
+		{
+			Application.Current.MainPage = new FormInscriptionInvestisseur();
+		}
 	}
 }

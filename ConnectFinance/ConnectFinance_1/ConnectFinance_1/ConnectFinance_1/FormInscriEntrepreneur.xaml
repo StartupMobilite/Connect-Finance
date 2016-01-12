@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConnectFinance_1.FormInscriEntrepreneur">
+	<ContentPage.Content>
+		<StackLayout>
+			<StackLayout.Children>
+				<Label Text="Logo" VerticalOptions="Start"/>
+				<StackLayout>
+					<StackLayout.Children>
+						<Entry x:Name="nom" Placeholder="Nom"/>
+						<Entry x:Name="prenom" Placeholder="Prenom"/>
+						<Entry x:Name="mail" Placeholder="E-mail"/>
+						<Entry x:Name="conf_mail" Placeholder="Confirmation e-mail"/>
+						<Entry x:Name="password" Placeholder="Mot de passe"/>
+						<Entry x:Name="conf_password" Placeholder="Confirmation mot de passe"/>
+						<Entry x:Name="societe" Placeholder="Nom de votre société"/>
+						<Button x:Name="validation" Text="Valider" Clicked="Validation_OnClicked"/>
+					</StackLayout.Children>
+				</StackLayout>
+			</StackLayout.Children>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

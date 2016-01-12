@@ -14,6 +14,7 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		ConnectFinance_1\ConnectFinance_1\ConnectFinance_1.projitems*{50e02d2f-9af5-460e-adfd-5842103780d3}*SharedItemsImports = 4
+		ConnectFinance_1\ConnectFinance_1\ConnectFinance_1.projitems*{62feee5e-2111-4663-8cca-81b7fd4b102d}*SharedItemsImports = 4
 		ConnectFinance_1\ConnectFinance_1\ConnectFinance_1.projitems*{42537121-0906-42f6-b961-35021a1f6032}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
