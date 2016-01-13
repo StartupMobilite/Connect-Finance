@@ -1,20 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Android.App;
-using Xamarin.Auth;
-using Newtonsoft.Json;
-using System.Threading;
-using Android.OS;
-using Android.Widget;
-using System.Threading.Tasks;
-using ConnectFinance_1.Droid;
-
-namespace ConnectFinance_1.SocialNetwork
+﻿namespace ConnectFinance_1.SocialNetwork
 {
     class Facebook
     {
-//#if __Android__
+#if __Android__
 		void LoginToFacebook(bool allowCancel)
 	    {
 		    var Authentification = new OAuth2Authenticator(
@@ -75,7 +63,7 @@ namespace ConnectFinance_1.SocialNetwork
 			var facebookNoCancel = FindViewById<Button>(Resource.Id.FacebookButtonNoCancel);
 			facebookNoCancel.Click += delegate { LoginToFacebook(false); };
 		}
-		//#endif
+		#endif
 
 	}
 }

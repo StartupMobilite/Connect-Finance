@@ -10,9 +10,11 @@ namespace ConnectFinance_1
 {
 	public partial class FormInscriEntrepreneur : ContentPage
 	{
+                
 		public FormInscriEntrepreneur ()
 		{
 			InitializeComponent ();
+            
 		}
 
 		private void Validation_OnClicked(object sender, EventArgs e)
