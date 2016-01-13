@@ -123,6 +123,9 @@
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
+    <Reference Include="Xamarin.Auth.Android">
+      <HintPath>..\..\packages\Xamarin.Auth.1.2.3.1\lib\android\Xamarin.Auth.Android.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Auth.iOS">
       <HintPath>..\..\packages\Xamarin.Auth.1.2.3.1\lib\ios\Xamarin.Auth.iOS.dll</HintPath>
     </Reference>

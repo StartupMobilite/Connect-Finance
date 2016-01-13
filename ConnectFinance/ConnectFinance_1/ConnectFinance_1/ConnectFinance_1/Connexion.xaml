@@ -10,6 +10,7 @@
 					<StackLayout.Children>
 						<Entry x:Name="adresse_mail" Placeholder="Adresse mail"/>
 						<Entry x:Name="password" Placeholder="Mot de passe"/>
+						<Button x:Name="validerBtn" Text="Valider" Clicked="ValiderBtn_OnClicked"/>
 					</StackLayout.Children>
 				</StackLayout>
 				<Button Text="Facebook"/>
