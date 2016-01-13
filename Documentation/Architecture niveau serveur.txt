@@ -1,0 +1,4 @@
+Racine : /connect_finance
+
+Images enregistrées associées à un compte : /connect_finance/img/account/{ACCOUNT_UID}/
+Images enregistrées associées à un projet : /connect_finance/img/project/{PROJECT_UID}/
