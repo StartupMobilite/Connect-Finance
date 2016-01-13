@@ -1,0 +1,4 @@
+9h-12h : Réparation de visual studio et du sdk android.
+
+14h-17h30 : Mise en place de la navigation sur l'appli.
+		 Début d'ajout d'un champ DatePicker afin de 				 sélectionner la date de naissance de l'utilisateur.

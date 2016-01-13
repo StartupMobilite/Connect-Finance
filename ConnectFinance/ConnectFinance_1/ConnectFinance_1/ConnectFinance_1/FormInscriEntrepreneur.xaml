@@ -15,7 +15,7 @@
 						<Entry x:Name="password" Placeholder="Mot de passe"/>
 						<Entry x:Name="conf_password" Placeholder="Confirmation mot de passe"/>
 						<Entry x:Name="societe" Placeholder="Nom de votre société"/>
-						<Button x:Name="validation" Text="Valider" Clicked="Validation_OnClicked"/>
+ 						<Button x:Name="validation" Text="Valider" Clicked="Validation_OnClicked"/>
 					</StackLayout.Children>
 				</StackLayout>
 			</StackLayout.Children>

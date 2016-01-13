@@ -17,12 +17,12 @@ namespace ConnectFinance_1
 
         void OnButtonConnexionClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new Connexion();
+            Navigation.PushModalAsync(new Connexion());
         }
 
         void OnButtonInscriptionClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new Inscription();
+            Navigation.PushModalAsync(new Inscription());
         }
     }
 }
