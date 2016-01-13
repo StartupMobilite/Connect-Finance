@@ -1,0 +1,9 @@
+->Recherche documentation pour pouvoir se connecter à l'application avec Facebook/Google+/LinkedIn
+->Création des 3 classes pour chaque type de connexion cité au dessus
+->Modification de la page "Connexion"
+->Création de la page "MainPage" (la où se trouvera le module principale, c'est à dire le system de swap à la tinder)
+->Rapide recherche sur comment faire un system de swap à la tinder. (Différent selon l'OS ?)
+->Création de la page "Mon profil"
+->Création de la page "Map"
+->Assisté à la conf des start-up
+->Debug xamarin de maxime (Oui, oui encore..)

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConnectFinance_1.MainPage">
+	<ContentPage.Content>
+		<Grid>
+			<StackLayout>
+				<Label Text="Logo"></Label>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Button x:Name="profilBtn" Text="Mon profil" Clicked="ProfilBtn_OnClicked"/>
+				<Button x:Name="mapBtn" Text="Afficher la carte" Clicked="MapBtn_OnClicked"/>
+			</StackLayout>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>
