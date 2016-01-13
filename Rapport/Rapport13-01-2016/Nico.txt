@@ -1,1 +1,3 @@
 - Optimisation de la BDD + création de celle ci sur PhpMyAdmin (export de la base dispo ici : \Connect-Finance\ConnectFinance\BDD\connect_finance.sql)
+- Création des app et paramétrage sur fb et google developer
+- Ajout du module Xamarin.Auth au projet, j'ai passé l'après midi a essayer de le faire marcher sans succès (nous sommes sur un projet Shared et le code des exemple n'est apparament pas du Xamarin Natif mais limite du java...)
