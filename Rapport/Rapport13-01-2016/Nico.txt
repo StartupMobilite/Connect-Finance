@@ -1,0 +1,1 @@
+- Optimisation de la BDD + création de celle ci sur PhpMyAdmin (export de la base dispo ici : \Connect-Finance\ConnectFinance\BDD\connect_finance.sql)
