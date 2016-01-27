@@ -2,5 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ConnectFinance_1.Profil">
-	<Label Text="Profil" VerticalOptions="Center" HorizontalOptions="Center" />
+	<ContentPage.Content>
+		<Grid>
+			<Grid.Children>
+				<StackLayout>
+					<Button x:Name="btnChangeInfo" Text="Changer mes informations" Clicked="BtnChangeInfo_OnClicked"/>
+					<Button x:Name="btnDeconnexion" Text="Me déconnecter" Clicked="BtnDeconnexion_OnClicked"/>
+				</StackLayout>
+			</Grid.Children>
+		</Grid>
+	</ContentPage.Content>
 </ContentPage>
