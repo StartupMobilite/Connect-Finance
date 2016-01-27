@@ -1,0 +1,5 @@
+- Création du webservice associé à l'application en PHP
+	- Création des models (fichiers de classes) associés à la BDD
+	- Création du "controleur" global
+	- Création du fichier de routes
+- Tentative d'envoie de données en POST avec HttpWebRequest de l'app vers l'API sur une des pages d'inscription.
