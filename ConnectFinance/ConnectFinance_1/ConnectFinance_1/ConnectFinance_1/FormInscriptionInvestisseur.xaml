@@ -10,11 +10,12 @@
 				<StackLayout.Children>
 					<Entry x:Name="nom" Placeholder="Nom"/>
 					<Entry x:Name="prenom" Placeholder="Prenom"/>
+          <Entry x:Name="birthday" Placeholder="Date de naissance"/>
 					<Entry x:Name="mail" Placeholder="E-mail"/>
 					<Entry x:Name="conf_mail" Placeholder="Confirmation e-mail"/>
 					<Entry x:Name="password" Placeholder="Mot de passe"/>
 					<Entry x:Name="conf_password" Placeholder="Confirmation mot de passe"></Entry>
-					<Entry x:Name="societe" Placeholder="Nom de votre société"/>
+					<!--<Entry x:Name="societe" Placeholder="Nom de votre société"/>-->
 					<Button x:Name="validation" Text="Valider" Clicked="Validation_OnClicked"></Button>
 				</StackLayout.Children>
 			</StackLayout>
