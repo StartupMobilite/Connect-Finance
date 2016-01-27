@@ -1,0 +1,1 @@
+Création + implémentation de la master détails page + implémentation d'image + mise au point avec les filles du projet + aide nico sur le code c# pour le la method post a l'api
