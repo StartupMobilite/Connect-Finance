@@ -17,7 +17,7 @@ namespace ConnectFinance_1
 
 		private void ValiderBtn_OnClicked(object sender, EventArgs e)
 		{
-			App.Current.MainPage = new MainPage();
+			App.Current.MainPage = new MainMasterDetailPage();
 		}
 	}
 }

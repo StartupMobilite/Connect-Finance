@@ -30,6 +30,11 @@
       <SubType>Code</SubType>
       <DependentUpon>Landing.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MainMasterDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainMasterPage.xaml.cs">
+      <DependentUpon>MainMasterPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -38,6 +43,7 @@
       <SubType>Code</SubType>
       <DependentUpon>Map.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MasterPageItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Profil.xaml.cs">
       <DependentUpon>Profil.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -86,5 +92,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)ViewsModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainMasterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
