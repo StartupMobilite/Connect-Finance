@@ -3,14 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ConnectFinance_1.MainPage">
 	<ContentPage.Content>
-		<Grid>
 			<StackLayout>
 				<Label Text="Logo"></Label>
 			</StackLayout>
-			<StackLayout Orientation="Horizontal">
+			<StackLayout Orientation="Horizontal" Height="200" Width="500" VerticalOptions="End">
 				<Button x:Name="profilBtn" Text="Mon profil" Clicked="ProfilBtn_OnClicked"/>
 				<Button x:Name="mapBtn" Text="Afficher la carte" Clicked="MapBtn_OnClicked"/>
 			</StackLayout>
-		</Grid>
 	</ContentPage.Content>
 </ContentPage>
