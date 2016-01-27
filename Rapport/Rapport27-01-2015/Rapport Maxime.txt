@@ -1,0 +1,18 @@
+Rapport
+
+
+
+
+- 9h15 : Récupération du code sur le git
+
+- 9h20 à 10h30 : Création  du DatePicker pour le fichier xaml 			 d'inscription.
+
+- 10h30 : Apparition de 158 erreur. Je ne sais pas d'où elles 		sortent.
+
+- 15h30 : Apres de multiples tentative de résolution des 			erreurs, je m'aperçois qu'elles viennent de 			l'émulateur.
+
+- 15h45 à 16h30 : Installation d'un nouvel émulateur 					 (Genymotion).
+
+- 16h30 : Le DatePicker ne marche pas. Tentative de 			     correction.
+
+- 17h00 : Redaction du rapport et commit du rapport.
