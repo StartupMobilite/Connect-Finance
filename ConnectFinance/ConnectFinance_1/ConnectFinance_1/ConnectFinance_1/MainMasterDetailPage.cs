@@ -7,7 +7,7 @@ namespace ConnectFinance_1
 {
     class MainMasterDetailPage : MasterDetailPage
     {
-	    private MainMasterPage masterPage;
+	    MainMasterPage masterPage;
 
 	    public MainMasterDetailPage()
 	    {

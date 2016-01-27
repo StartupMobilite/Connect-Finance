@@ -26,6 +26,18 @@ namespace ConnectFinance_1
 				TargetType = typeof(MainPage)
 			});
 
+			masterPageItems.Add(new MasterPageItem
+			{
+				Title = "Mon profil",
+				TargetType =  typeof(Profil)
+			});
+
+			masterPageItems.Add(new MasterPageItem
+			{
+				Title = "Map",
+				TargetType = typeof(Map)
+			});
+
 			listView = new ListView
 			{
 				ItemsSource = masterPageItems,

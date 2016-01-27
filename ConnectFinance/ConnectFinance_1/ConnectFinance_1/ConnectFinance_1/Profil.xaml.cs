@@ -14,5 +14,15 @@ namespace ConnectFinance_1
 		{
 			InitializeComponent ();
 		}
+
+		private void BtnDeconnexion_OnClicked(object sender, EventArgs e)
+		{
+			throw new NotImplementedException();
+		}
+
+		private void BtnChangeInfo_OnClicked(object sender, EventArgs e)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }
