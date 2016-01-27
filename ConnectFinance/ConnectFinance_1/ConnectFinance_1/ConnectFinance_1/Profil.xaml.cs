@@ -24,5 +24,15 @@ namespace ConnectFinance_1
 		{
 			throw new NotImplementedException();
 		}
+
+		private void BtnUploadCV_OnClicked(object sender, EventArgs e)
+		{
+			throw new NotImplementedException();
+		}
+
+		private void BtnUploadLM_OnClicked(object sender, EventArgs e)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }

@@ -5,8 +5,10 @@
 	<ContentPage.Content>
 		<Grid>
 			<Grid.Children>
-				<StackLayout>
+				<StackLayout VerticalOptions="FillAndExpand">
 					<Button x:Name="btnChangeInfo" Text="Changer mes informations" Clicked="BtnChangeInfo_OnClicked"/>
+					<Button x:Name="btnUploadCv" Text="Charger votre CV" Clicked="BtnUploadCV_OnClicked"/>
+					<Button x:Name="btnUploadLM" Text="Charger votre lettre de motivation" Clicked="BtnUploadLM_OnClicked"/>
 					<Button x:Name="btnDeconnexion" Text="Me déconnecter" Clicked="BtnDeconnexion_OnClicked"/>
 				</StackLayout>
 			</Grid.Children>

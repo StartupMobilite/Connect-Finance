@@ -8,16 +8,15 @@ namespace ConnectFinance_1
     class MainMasterDetailPage : MasterDetailPage
     {
 	    MainMasterPage masterPage;
-
 	    public MainMasterDetailPage()
 	    {
 			masterPage = new MainMasterPage();
 			Master = masterPage;
 			Detail = new NavigationPage(new MainPage());
+		    Detail.Icon = "MenuIcon";
 
 			masterPage.ListView.ItemSelected += OnItemSelected;
 		}
-
 	    private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
 	    {
 		    var item = e.SelectedItem as MasterPageItem;
