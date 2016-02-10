@@ -17,7 +17,7 @@
 		
 		public static function connect() {
 			if(is_null(self::$instance)) {
-				self::$instance = new BDD_test();
+				self::$instance = new DataManager();
 			}
 			
 			return self::$instance;
@@ -72,12 +72,13 @@
 		}
 		
 		public function save() {
-			$con = $this->connect();
+			$con = self::connect();
 			$i = 0;
+			$log = "";
 			
 			if($this->get_id() == "") {
 				foreach($this as $property => $value) {
-					if(!in_array($property, $this->exceptions)) {
+					if(!in_array($property, $con->exceptions)) {
 						if($i > 0) {
 							if($i > 1) {
 								$sql .= ", ";
@@ -114,6 +115,7 @@
 				
 				$sql .= ' WHERE id='.$con->quote($id);
 			}
+			
 			$con->query($sql) or die($sql);
 		}
 	}

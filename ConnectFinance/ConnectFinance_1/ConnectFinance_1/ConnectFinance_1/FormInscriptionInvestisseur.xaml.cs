@@ -28,8 +28,22 @@ namespace ConnectFinance_1
 		private void Validation_OnClicked(object sender, EventArgs e)
 		{
             WebClient client = new WebClient();
+            client.Encoding = Encoding.UTF8;
+
             Uri url = new Uri("http://webdev77.fr/connect-finance/service.php?action=create_user");
             NameValueCollection parameters = new NameValueCollection();
+
+		    String mdp = password.Text;
+            UTF8Encoding encoding = new UTF8Encoding();
+            byte[] HashValue, MessageBytes = encoding.GetBytes(mdp);
+            SHA1Managed SHhash = new SHA1Managed();
+            string strHex = "";
+
+            HashValue = SHhash.ComputeHash(MessageBytes);
+            foreach (byte b in HashValue)
+            {
+                strHex += String.Format("{0:x2}", b);
+            }
 
             user.nom = nom.Text;
             user.prenom = prenom.Text;
@@ -37,11 +51,11 @@ namespace ConnectFinance_1
             user.sexe = "3";
             user.latitude = "0";
             user.longitude = "0";
-            user.password = (new SHA1Managed()).ComputeHash(Encoding.UTF8.GetBytes(password.Text)).ToString();
+            user.password = strHex;
             user.mail = mail.Text;
             user.account_type = "0";
             user.token_type = "6";
-            user.token = "token";
+            user.token = "";
             user.related_files_dir_uid = "test123";
 
             if(mail.Text != conf_mail.Text)
@@ -68,9 +82,13 @@ namespace ConnectFinance_1
             parameters.Add("token", user.token);
             parameters.Add("related_files_dir_uid", user.related_files_dir_uid);
 
-            client.UploadValuesCompleted += client_UploadValuesCompleted;
-            client.UploadValuesAsync(url, parameters);
-        }
+		    client.UploadValuesCompleted += client_UploadValuesCompleted;
+		    client.UploadValuesAsync(url, parameters);
+
+		    Button validationButton = (Button)sender;
+		    validationButton.IsEnabled = false;
+		    validationButton.Text = "Patientez...";
+		}
 
         private async void client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
         {

@@ -17,6 +17,19 @@
 		protected $token;
 		protected $related_files_dir_uid;
 		
+		public function __construct() {
+			$ctp = func_num_args();
+			$args = func_get_args();
+			
+			switch($ctp) {
+				case 1:
+					$this->update($args[0]);
+					break;
+				default:
+					break;
+			}
+		}
+		
 		public function get_id() {
 			return $this->id;
 		}
@@ -154,11 +167,7 @@
 		
 		public function update($properties) {
 			foreach($properties as $key => $value) {
-				if($key == 'password') {
-					$this->$key = sha1($value);
-				} else {
-					$this->$key = $value;
-				}
+				$this->$key = $value;
 			}
 		}
 	}
