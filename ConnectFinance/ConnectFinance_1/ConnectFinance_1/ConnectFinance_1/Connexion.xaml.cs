@@ -13,9 +13,6 @@ namespace ConnectFinance_1
 		public Connexion ()
 		{
 			InitializeComponent ();
-			//Test écrire/lire fichier
-			Models.myFile.WriteFiles("Hello world");
-			Models.myFile.ReadFiles();
 		}
 
 		private void ValiderBtn_OnClicked(object sender, EventArgs e)
@@ -36,6 +33,21 @@ namespace ConnectFinance_1
 				DisplayAlert("Attention", "Les champs de doivent pas être vide", "Ok");
 			}
 			
+		}
+
+		private void BtnFb_OnClicked(object sender, EventArgs e)
+		{
+			throw new NotImplementedException();
+		}
+
+		private void BtnLnkd_OnClicked(object sender, EventArgs e)
+		{
+			throw new NotImplementedException();
+		}
+
+		private void BtnGP_OnClicked(object sender, EventArgs e)
+		{
+			throw new NotImplementedException();
 		}
 	}
 }
