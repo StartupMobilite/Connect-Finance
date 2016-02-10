@@ -6,7 +6,7 @@ namespace ConnectFinance_1.SocialNetwork
 {
 	class Facebook
 	{
-		private const string AppId = "128962504148722";
+		/*private const string AppId = "128962504148722";
 		private OAuth2Authenticator _auth;
 		private Account _account;
 
@@ -43,5 +43,6 @@ namespace ConnectFinance_1.SocialNetwork
 
 			return _auth;
 		}
+        */
 	}
 }

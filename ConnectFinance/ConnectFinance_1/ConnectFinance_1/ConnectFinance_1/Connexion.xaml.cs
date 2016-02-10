@@ -11,7 +11,7 @@ namespace ConnectFinance_1
 {
 	public partial class Connexion : ContentPage
 	{
-		public Connexion()
+		/*public Connexion()
 		{
 			InitializeComponent();
 		}
@@ -40,7 +40,7 @@ namespace ConnectFinance_1
 		{
 			var FbProvider = new Facebook();
 
-			FbProvider.GetAccount().GetUI();
+			//FbProvider.GetAccount().GetUI();
 		}
 
 		private void BtnLnkd_OnClicked(object sender, EventArgs e)
@@ -51,6 +51,6 @@ namespace ConnectFinance_1
 		private void BtnGP_OnClicked(object sender, EventArgs e)
 		{
 			throw new NotImplementedException();
-		}
+		}*/
 	}
 }
