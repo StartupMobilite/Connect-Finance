@@ -13,6 +13,9 @@ namespace ConnectFinance_1
 		public Connexion ()
 		{
 			InitializeComponent ();
+			//Test écrire/lire fichier
+			Models.myFile.WriteFiles("Hello world");
+			Models.myFile.ReadFiles();
 		}
 
 		private void ValiderBtn_OnClicked(object sender, EventArgs e)
