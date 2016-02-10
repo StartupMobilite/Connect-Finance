@@ -18,9 +18,15 @@ namespace ConnectFinance_1
 		public FormInscriEntrepreneur ()
 		{
 			InitializeComponent ();
+<<<<<<< HEAD
 
             user = new User();
         }
+=======
+            
+            
+		}
+>>>>>>> master
 
 		private void Validation_OnClicked(object sender, EventArgs e)
 		{

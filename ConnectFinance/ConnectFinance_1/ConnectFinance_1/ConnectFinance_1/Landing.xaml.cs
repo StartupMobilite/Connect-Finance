@@ -13,6 +13,8 @@ namespace ConnectFinance_1
 		public Landing ()
 		{
 			InitializeComponent ();
+            btnConnexion.BackgroundColor = Color.Gray;
+            btnInscription.BackgroundColor = Color.Gray;
 		}
 
         void OnButtonConnexionClicked(object sender, EventArgs e)
