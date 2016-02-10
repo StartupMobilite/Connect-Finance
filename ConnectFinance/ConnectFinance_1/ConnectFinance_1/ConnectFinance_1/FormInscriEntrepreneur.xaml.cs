@@ -15,6 +15,7 @@ namespace ConnectFinance_1
 		{
 			InitializeComponent ();
             
+            
 		}
 
 		private void Validation_OnClicked(object sender, EventArgs e)

@@ -20,7 +20,7 @@ namespace ConnectFinance_1
 			// Handle when your app starts
 		}
 
-		protected override void OnSleep ()
+		protected  override void OnSleep ()
 		{
 			// Handle when your app sleeps
 		}
