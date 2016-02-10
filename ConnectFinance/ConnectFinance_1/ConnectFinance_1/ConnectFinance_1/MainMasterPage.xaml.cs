@@ -44,14 +44,12 @@ namespace ConnectFinance_1
 				ItemTemplate = new DataTemplate(() => {
 					var imageCell = new ImageCell();
 					imageCell.SetBinding(TextCell.TextProperty, "Title");
-					//imageCell.SetBinding(ImageCell.ImageSourceProperty, "IconSource");
 					return imageCell;
 				}),
 				VerticalOptions = LayoutOptions.FillAndExpand,
 			};
 
 			Padding = new Thickness(0, 40, 0, 0);
-			//Icon = "hamburger.png";
 			Title = "Menu";
 			Content = new StackLayout
 			{
