@@ -1,6 +1,6 @@
 ﻿using ConnectFinance_1.Models;
 using System;
-using Xamarin.Auth;
+//using Xamarin.Auth;
 
 namespace ConnectFinance_1.SocialNetwork
 {
