@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using ConnectFinance_1.SocialNetwork;
 
 namespace ConnectFinance_1.Droid
 {
@@ -18,6 +19,10 @@ namespace ConnectFinance_1.Droid
 
 			global::Xamarin.Forms.Forms.Init (this, bundle);
 			LoadApplication (new ConnectFinance_1.App ());
+
+			var FbProvider = new Facebook();
+			
+			//StartActivity(FbProvider.GetAccount().GetUI(this));
 		}
 	}
 }

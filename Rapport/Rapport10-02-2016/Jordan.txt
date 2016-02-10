@@ -1,0 +1,7 @@
+-> Condition de connexion sur la page Connexion.xaml.cs
+-> Document de ce qu'il nous reste à faire
+-> Complétion de 3 boutons de la page Connexion.xaml.cs 
+-> Classe myfile.cs avec deux méthodes pour écrire et lire des fichiers dans les dossier du téléphonne
+-> Documentation sur l'implémentation de la carte googleMap : https://developer.xamarin.com/guides/android/platform_features/maps_and_location/maps/obtaining_a_google_maps_api_key/ 
+https://www.google.com/work/mapsearth/products/mapsapi.html#pricing
+-> Participation au cours de Paul 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Android.OS;
 using ConnectFinance_1.SocialNetwork;
 using Xamarin.Forms;
 
@@ -10,9 +11,9 @@ namespace ConnectFinance_1
 {
 	public partial class Connexion : ContentPage
 	{
-		public Connexion ()
+		public Connexion()
 		{
-			InitializeComponent ();
+			InitializeComponent();
 		}
 
 		private void ValiderBtn_OnClicked(object sender, EventArgs e)
@@ -32,12 +33,14 @@ namespace ConnectFinance_1
 			{
 				DisplayAlert("Attention", "Les champs de doivent pas être vide", "Ok");
 			}
-			
+
 		}
 
 		private void BtnFb_OnClicked(object sender, EventArgs e)
 		{
-			throw new NotImplementedException();
+			var FbProvider = new Facebook();
+
+			FbProvider.GetAccount().GetUI();
 		}
 
 		private void BtnLnkd_OnClicked(object sender, EventArgs e)

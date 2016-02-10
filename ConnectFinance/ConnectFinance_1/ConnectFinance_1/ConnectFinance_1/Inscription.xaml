@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ConnectFinance_1.Inscription">
 	<ContentPage.Content>
-		<StackLayout>
+		<StackLayout BackgroundColor="White">
 		<StackLayout.Children>
 			<Label Text="Logo" VerticalOptions="Start"/>
 			<StackLayout VerticalOptions="CenterAndExpand">

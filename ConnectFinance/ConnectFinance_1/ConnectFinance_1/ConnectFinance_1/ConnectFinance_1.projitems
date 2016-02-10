@@ -54,7 +54,7 @@
       <DependentUpon>Profil.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)SocialNetwork\Facebook.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Providers\FacebookProviders.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SocialNetwork\GooglePlus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SocialNetwork\LinkedIn.cs" />
   </ItemGroup>
