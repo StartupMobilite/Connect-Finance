@@ -11,6 +11,7 @@ using System.Security.Cryptography;
 using System.IO;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace ConnectFinance_1
 {
@@ -20,7 +21,7 @@ namespace ConnectFinance_1
 
 		public FormInscriptionInvestisseur ()
 		{
-			InitializeComponent ();
+            InitializeComponent();
 
             user = new User();
 		}
@@ -47,7 +48,7 @@ namespace ConnectFinance_1
 
             user.nom = nom.Text;
             user.prenom = prenom.Text;
-            user.birthday = birthday.Text;
+            user.birthday = birthday.Date.ToString("Y-mm-dd");
             user.sexe = "3";
             user.latitude = "0";
             user.longitude = "0";
