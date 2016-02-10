@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,19 +27,21 @@ namespace ConnectFinance_1
 
 		private void Validation_OnClicked(object sender, EventArgs e)
 		{
-            string url = "http://webdev77.fr/connect-finance/create-user.cgi";
+            WebClient client = new WebClient();
+            Uri url = new Uri("http://webdev77.fr/connect-finance/service.php?action=create_user");
+            NameValueCollection parameters = new NameValueCollection();
 
             user.nom = nom.Text;
             user.prenom = prenom.Text;
             user.birthday = birthday.Text;
-            user.sexe = "0";
+            user.sexe = "3";
             user.latitude = "0";
             user.longitude = "0";
             user.password = (new SHA1Managed()).ComputeHash(Encoding.UTF8.GetBytes(password.Text)).ToString();
             user.mail = mail.Text;
             user.account_type = "0";
-            user.token_type = "0";
-            user.token = "";
+            user.token_type = "6";
+            user.token = "token";
             user.related_files_dir_uid = "test123";
 
             if(mail.Text != conf_mail.Text)
@@ -51,36 +54,30 @@ namespace ConnectFinance_1
                 throw new Exception("Mdp et confirmation de mdp different");
             }
 
-            StringBuilder postData = new StringBuilder();
-            var properties = typeof(User).GetProperties();
-            int prop_count = properties.Length;
-            int i = 0;
+            parameters.Add("nom", user.nom);
+            parameters.Add("prenom", user.prenom);
+            parameters.Add("birthday", user.birthday);
+            parameters.Add("sexe", user.sexe);
+            parameters.Add("tel", "0000000000");
+            parameters.Add("latitude", user.latitude);
+            parameters.Add("longitude", user.longitude);
+            parameters.Add("password", user.password);
+            parameters.Add("mail", user.mail);
+            parameters.Add("account_type", user.account_type);
+            parameters.Add("token_type", user.token_type);
+            parameters.Add("token", user.token);
+            parameters.Add("related_files_dir_uid", user.related_files_dir_uid);
 
-            foreach (var prop in properties)
-            {
-                if(prop_count > i)
-                {
-                    postData.Append(HttpUtility.UrlEncode(String.Format(prop.Name.ToString() + "={0}", prop.Attributes.ToString())) + "&");
-                } else
-                {
-                    postData.Append(HttpUtility.UrlEncode(String.Format(prop.Name.ToString() + "={0}", prop.Attributes.ToString())));
-                }
-
-                i++;
-            }
-
-            ASCIIEncoding ascii = new ASCIIEncoding();
-            byte[] postBytes = ascii.GetBytes(postData.ToString());
-
-            var request = HttpWebRequest.Create(url);
-            request.Method = "POST";
-            request.ContentType = "application/x-www-form-urlencoded";
-            request.ContentLength = postBytes.Length;
-
-            Stream postStream = request.GetRequestStream();
-            postStream.Write(postBytes, 0, postBytes.Length);
-            postStream.Flush();
-            postStream.Close();
+            client.UploadValuesCompleted += client_UploadValuesCompleted;
+            client.UploadValuesAsync(url, parameters);
         }
-	}
+
+        private async void client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
+        {
+            //TODO: Redirection vers la page suivante avec un message comme quoi le compte est bien créé + sauvegarde du compte dans une sorte de session C#
+            var modalPage = new ModalAccountHasBeenCreated();
+            await Navigation.PushModalAsync(modalPage);
+            await Navigation.PopModalAsync();
+        }
+    }
 }
