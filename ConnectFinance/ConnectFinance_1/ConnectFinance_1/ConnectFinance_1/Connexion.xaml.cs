@@ -17,7 +17,22 @@ namespace ConnectFinance_1
 
 		private void ValiderBtn_OnClicked(object sender, EventArgs e)
 		{
-			App.Current.MainPage = new MainMasterDetailPage();
+			if (adresse_mail.Text.Length > 0)
+			{
+				if (password.Text.Length > 0)
+				{
+					App.Current.MainPage = new MainMasterDetailPage();
+				}
+				else
+				{
+					DisplayAlert("Attention", "Les champs de doivent pas être vide", "Ok");
+				}
+			}
+			else
+			{
+				DisplayAlert("Attention", "Les champs de doivent pas être vide", "Ok");
+			}
+			
 		}
 	}
 }

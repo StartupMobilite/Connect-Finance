@@ -1,0 +1,5 @@
+-> Implémenter la carte, 
+-> Implémenter les systemes de connexion avec FB/LinkedIn
+-> System de message
+-> Swap comme "Tinder" + match
+-> Connection BDD
