@@ -10,7 +10,7 @@
 				<StackLayout.Children>
 					<Entry x:Name="nom" Placeholder="Nom"/>
 					<Entry x:Name="prenom" Placeholder="Prenom"/>
-          <Entry x:Name="birthday" Placeholder="Date de naissance"/>
+          <DatePicker x:Name="birthday" Format="dd/MM/yyyy" />
 					<Entry x:Name="mail" Placeholder="E-mail"/>
 					<Entry x:Name="conf_mail" Placeholder="Confirmation e-mail"/>
 					<Entry x:Name="password" Placeholder="Mot de passe"/>
