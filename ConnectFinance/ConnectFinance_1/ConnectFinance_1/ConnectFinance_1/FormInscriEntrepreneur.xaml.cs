@@ -8,25 +8,25 @@ using ConnectFinance_1.Models;
 using Xamarin.Forms;
 using System.Net;
 using System.Security.Cryptography;
+using Geolocator.Plugin;
+using Geolocator.Plugin.Abstractions;
 
 namespace ConnectFinance_1
 {
 	public partial class FormInscriEntrepreneur : ContentPage
 	{
-	    public User user;
+	    private User user;
+	    private Position pos;
+
 
 		public FormInscriEntrepreneur ()
 		{
-			InitializeComponent ();
-<<<<<<< HEAD
+            InitializeComponent ();
 
             user = new User();
+
+            client_GetGeoLocation();
         }
-=======
-            
-            
-		}
->>>>>>> master
 
 		private void Validation_OnClicked(object sender, EventArgs e)
 		{
@@ -51,8 +51,8 @@ namespace ConnectFinance_1
             user.nom = nom.Text;
             user.prenom = prenom.Text;
             user.sexe = "3";
-            user.latitude = "0";
-            user.longitude = "0";
+            user.latitude = pos.Latitude.ToString();
+            user.longitude = pos.Longitude.ToString();
             user.password = strHex;
             user.mail = mail.Text;
             user.account_type = "0";
@@ -98,6 +98,14 @@ namespace ConnectFinance_1
             var modalPage = new ModalAccountHasBeenCreated();
             await Navigation.PushModalAsync(modalPage);
             await Navigation.PopModalAsync();
+        }
+
+	    private async void client_GetGeoLocation()
+	    {
+            var locator = CrossGeolocator.Current;
+            locator.DesiredAccuracy = 50;
+
+            pos = await locator.GetPositionAsync(timeoutMilliseconds: 10000);
         }
     }
 }

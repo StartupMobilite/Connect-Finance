@@ -1,0 +1,11 @@
+- Jonction entre la web API et l'application mobile
+	- Petits changements dans le PHP (le singleton de connexion à la BDD était mauvais)
+	- Nous étions partie sur une connexion à l'API avec des WebRequests mais ça marchait moyen voir pas du tout donc j'ai réécrit cette partie avec WebClient à la place de WebRequest
+		- Paramétrage
+			- Envoie des données en UTF8
+			- Creation d'une collection de parametre (on était partie sur une auto génération de la collection en récupérant les propriétés d'une classe avec Class.Reflection mais ça ne marchait pas donc on a fait autrement)
+			- Ouverture et fermeture immédiate d'un popup qui nous indique que le compte a été créé quand les données sont arrivées sur l'api php (fonctionnalité utile seulement à des fins de test)
+- Cryptage du mot de passe en SHA1
+	- Problème rencontré : le SHA1 envoyé par l'application était différent du sha1 que je générais en php avec le même mot (problème de différence d'encodage) + problème dans la classe Users dans le PHP (je hashais une deuxième fois le SHA1 donc forcément ça ne tombait pas sur le même au final)
+- Ajout d'un DatePicker à la place de l'entry pour la date de naissance mais bon je trouve que c'est archi moche sur android (à voir si on le garde)
+- Ajout d'un composant pour la geolocalisation + début du code pour la gérer mais les coordonnées ne sont pas bon pour l'instant.
