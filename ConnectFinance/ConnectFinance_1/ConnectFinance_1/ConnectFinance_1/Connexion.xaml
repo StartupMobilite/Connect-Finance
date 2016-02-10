@@ -13,9 +13,9 @@
 						<Button x:Name="validerBtn" Text="Valider" Clicked="ValiderBtn_OnClicked"/>
 					</StackLayout.Children>
 				</StackLayout>
-				<Button Text="Facebook"/>
-				<Button Text="LinkedIn"/>
-				<Button Text="Google"/>
+				<Button x:Name="btnFb" Text="Facebook" Clicked="BtnFb_OnClicked"/>
+				<Button x:Name="btnLnkd" Text="LinkedIn" Clicked="BtnLnkd_OnClicked"/>
+				<Button x:Name="btnGP" Text="Google" Clicked="BtnGP_OnClicked"/>
 			</StackLayout.Children>
 		</StackLayout>
 	</ContentPage.Content>
