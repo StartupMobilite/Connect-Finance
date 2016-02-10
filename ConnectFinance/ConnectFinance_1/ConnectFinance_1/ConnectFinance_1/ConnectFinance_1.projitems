@@ -44,6 +44,7 @@
       <DependentUpon>Map.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MasterPageItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\myFile.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Profil.xaml.cs">
       <DependentUpon>Profil.xaml</DependentUpon>
