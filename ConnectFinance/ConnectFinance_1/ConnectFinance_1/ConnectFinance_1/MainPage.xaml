@@ -1,12 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ConnectFinance_1.MainPage">
-	<ContentPage.Content>
-			<Grid>
-				<Grid.Children>
-					<Label Text="ICI SERA AFFICHER LE SYSTEM DE SWAP"/>	
-				</Grid.Children>
-			</Grid>
-	</ContentPage.Content>
-</ContentPage>
+  <ContentPage>
+    <StackLayout>
+      <Label Text="Red" />
+      <StackLayout>
+        <ScrollView BackgroundColor="Red" VerticalOptions="FillAndExpand" Orientation="Vertical">
+          <StackLayout>
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+            <Label Text="Test" />
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+        <Button Text="Passer" />
+        <Button Text="Ce projet m'intéresse" />
+      </StackLayout>
+    </StackLayout>
+  </ContentPage>
+  <ContentPage>
+    <StackLayout>
+      <Label Text="Green" />
+      <BoxView Color="Green" VerticalOptions="FillAndExpand" />
+    </StackLayout>
+  </ContentPage>
+  <ContentPage>
+    <StackLayout>
+      <Label Text="Blue" />
+      <BoxView Color="Blue" VerticalOptions="FillAndExpand" />
+    </StackLayout>
+  </ContentPage>
+</CarouselPage>
