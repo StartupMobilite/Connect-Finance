@@ -17,5 +17,15 @@
 			$user->save();
 			
 			break;
+		case 'connexion':
+			$user = User::getByMail($_POST['mail']);
+			
+			if($user) {
+				if($user->get_password() == $_POST['password']) {
+					echo $user->getJsonProperties();
+				}
+			}
+			
+			break;
 	}
 ?>
