@@ -8,9 +8,15 @@
 				<Label Text="Logo" VerticalOptions="Start"/>
 				<StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
 					<StackLayout.Children>
-            <Label Text="" x:Name="Error" TextColor="Red" />
 						<Entry x:Name="adresse_mail" Placeholder="Adresse mail"/>
 						<Entry x:Name="password" IsPassword="True" Placeholder="Mot de passe"/>
+						<StackLayout Orientation="Horizontal">
+							<StackLayout.Children>
+								<Label Text="Se souvenir de moi"></Label>
+								<Switch x:Name="monSwitch" />
+							</StackLayout.Children>
+						</StackLayout>
+						
 						<Button x:Name="validerBtn" Text="Valider" Clicked="ValiderBtn_OnClicked"/>
 					</StackLayout.Children>
 				</StackLayout>

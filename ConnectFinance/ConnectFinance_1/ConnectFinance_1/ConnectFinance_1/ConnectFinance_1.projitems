@@ -51,7 +51,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Image.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Match.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Message.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\myFile.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Project.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Sector.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\TemporaryMatch.cs" />

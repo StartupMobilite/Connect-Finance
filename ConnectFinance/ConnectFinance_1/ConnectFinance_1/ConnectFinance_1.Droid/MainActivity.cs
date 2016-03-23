@@ -20,7 +20,7 @@ namespace ConnectFinance_1.Droid
 			global::Xamarin.Forms.Forms.Init (this, bundle);
 			LoadApplication (new ConnectFinance_1.App ());
 
-			var FbProvider = new Facebook();
+			//var FbProvider = new Facebook();
 			
 			//StartActivity(FbProvider.GetAccount().GetUI(this));
 		}
