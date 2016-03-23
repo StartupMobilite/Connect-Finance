@@ -1,0 +1,4 @@
+- Système de connexion
+- Quelques modifs au niveau de la vue de connexion
+- Création système de création de poste (coté device et coté API WEB)
+- Création de la vue de "navigation entre projet"
