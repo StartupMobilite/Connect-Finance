@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:components="clr-namespace:ConnectFinance_1.Components;assembly=ConnectFinance_1.Droid"
+             x:Class="ConnectFinance_1.AddProjectPage">
+  <ContentPage.Content>
+    <StackLayout>
+      <StackLayout.Children>
+        <Entry x:Name="nom" Placeholder="Nom du projet"/>
+        <Entry x:Name="amount" Placeholder="Financement espéré"/>
+        <Label Text="Description :" />
+        <Editor x:Name="description" />
+        <components:BindablePicker x:Name="SectorPicker" ItemsSource="{Binding sectorObjList}">
+          <DataTemplate>
+            <Label Text="{Binding name}" />
+          </DataTemplate>  
+        </components:BindablePicker>
+        <Picker>
+          
+        </Picker>
+        <Button x:Name="validation" Text="Valider" Clicked="Validation_OnClicked"></Button>
+      </StackLayout.Children>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

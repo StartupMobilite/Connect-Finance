@@ -38,7 +38,13 @@ namespace ConnectFinance_1
 				TargetType = typeof(Map)
 			});
 
-			listView = new ListView
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Ajouter un projet",
+                TargetType = typeof(AddProjectPage)
+            });
+
+            listView = new ListView
 			{
 				ItemsSource = masterPageItems,
 				ItemTemplate = new DataTemplate(() => {

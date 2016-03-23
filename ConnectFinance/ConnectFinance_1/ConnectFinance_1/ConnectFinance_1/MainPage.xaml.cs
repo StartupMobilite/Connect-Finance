@@ -9,7 +9,7 @@ using Xamarin.Forms;
 
 namespace ConnectFinance_1
 {
-	public partial class MainPage : CarouselPage
+	public partial class MainPage : ContentPage
 	{
 		public MainPage ()
 		{

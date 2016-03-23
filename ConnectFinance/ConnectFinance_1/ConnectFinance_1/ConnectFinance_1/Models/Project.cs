@@ -10,7 +10,7 @@ namespace ConnectFinance_1.Models
 
         public string name { get; set; }
 
-        public User owner { get; set; }
+        public string owner { get; set; }
 
         public string creation_date { get; set; }
 
