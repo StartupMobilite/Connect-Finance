@@ -4,19 +4,21 @@ using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Android.OS;
+
 using ConnectFinance_1.SocialNetwork;
 using Xamarin.Forms;
 using System.Net;
 using System.Security.Cryptography;
 using ConnectFinance_1.Models;
 using Newtonsoft.Json.Linq;
+using PCLStorage;
 
 namespace ConnectFinance_1
 {
 	public partial class Connexion : ContentPage
 	{
 	    public static User user;
+		private string responseValue;
 
 		public Connexion()
 		{
@@ -68,11 +70,17 @@ namespace ConnectFinance_1
 
                     //TODO: Stockage de userObj dans le fichier de "session" sur le device
 
+				    if (monSwitch.IsToggled == true)
+				    {
+					    responseValue = responseText;
+						WriteLogFile();
+				    }
+
                     App.Current.MainPage = new MainMasterDetailPage();
                 }
                 else
 			    {
-			        Error.Text = "Ce compte n'existe pas !";
+			        //Error.Text = "Ce compte n'existe pas !";
 			        adresse_mail.Text = "";
 			        password.Text = "";
                     validationButton.IsEnabled = true;
@@ -98,6 +106,14 @@ namespace ConnectFinance_1
 		private void BtnGP_OnClicked(object sender, EventArgs e)
 		{
 			throw new NotImplementedException();
+		}
+
+		public async void WriteLogFile()
+		{
+			IFolder rootFolder = FileSystem.Current.LocalStorage;
+			IFolder myFolder = await rootFolder.CreateFolderAsync("Log", CreationCollisionOption.OpenIfExists);
+			IFile myFile = await myFolder.CreateFileAsync("Log.json", CreationCollisionOption.OpenIfExists);
+			await myFile.WriteAllTextAsync(responseValue);
 		}
 	}
 }
