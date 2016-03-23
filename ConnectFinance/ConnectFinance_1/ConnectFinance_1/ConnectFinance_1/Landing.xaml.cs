@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using ConnectFinance_1.Models;
+using Newtonsoft.Json.Linq;
+using PCLStorage;
 
 using Xamarin.Forms;
 
@@ -12,8 +16,14 @@ namespace ConnectFinance_1
 	{
 		public Landing ()
 		{
+			
+
 			InitializeComponent ();
-            btnConnexion.BackgroundColor = Color.Gray;
+
+			//Verifie si l'utilisateur est déjà connecté
+			VerifRememberMe();
+
+			btnConnexion.BackgroundColor = Color.Gray;
             btnInscription.BackgroundColor = Color.Gray;
 		}
 
@@ -26,5 +36,38 @@ namespace ConnectFinance_1
         {
             Navigation.PushModalAsync(new Inscription());
         }
+
+		public async void VerifRememberMe()
+		{
+			string token;
+
+			//Recupère le fichier log
+			try
+			{
+				IFolder rootFolder = FileSystem.Current.LocalStorage;
+				IFolder myFolder = await rootFolder.CreateFolderAsync("Log", CreationCollisionOption.OpenIfExists);
+				
+				IFile myFile = myFolder.GetFileAsync("Log.json").Result;
+				token = myFile.ReadAllTextAsync().Result;
+			}
+			catch (Exception)
+			{
+				token = "";
+			}
+
+			//Parse les données du fichier log
+			try
+			{
+				var json = JObject.Parse(token);
+
+				User userObj = Newtonsoft.Json.JsonConvert.DeserializeObject<User>(json["content"].ToString());
+
+				await Navigation.PushModalAsync(new MainPage());
+			}
+			catch (Exception)
+			{
+				await Navigation.PushModalAsync(new Connexion());
+			}
+		}
     }
 }
