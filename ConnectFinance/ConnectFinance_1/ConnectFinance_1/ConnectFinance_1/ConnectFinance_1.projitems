@@ -9,11 +9,17 @@
     <Import_RootNamespace>ConnectFinance_1</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AddProjectPage.xaml.cs">
+      <DependentUpon>AddProjectPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Components\BindablePicker.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Connexion.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>Connexion.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\EnumerableExtension.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FormInscriEntrepreneur.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>FormInscriEntrepreneur.xaml</DependentUpon>
@@ -109,6 +115,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)ModalAccountHasBeenCreated.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AddProjectPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

@@ -17,7 +17,7 @@ namespace ConnectFinance_1
 {
 	public partial class Connexion : ContentPage
 	{
-	    private User user;
+	    public static User user;
 		private string responseValue;
 
 		public Connexion()

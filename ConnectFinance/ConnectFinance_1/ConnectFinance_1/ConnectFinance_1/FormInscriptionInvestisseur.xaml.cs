@@ -48,7 +48,7 @@ namespace ConnectFinance_1
 
             user.nom = nom.Text;
             user.prenom = prenom.Text;
-            user.birthday = birthday.Date.ToString("Y-mm-dd");
+            user.birthday = birthday.Date.ToString("YYYY-mm-dd");
             user.sexe = "3";
             user.latitude = "0";
             user.longitude = "0";
