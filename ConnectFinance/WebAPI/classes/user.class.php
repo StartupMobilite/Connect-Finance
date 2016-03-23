@@ -139,8 +139,8 @@
 		}
 		
 		public static function getList() {
-			$con = $this->connect();
-			$sql = "SELECT * FROM ".$table_name;
+			$con = self::connect();
+			$sql = "SELECT * FROM users";
 			$query = $con->query($sql);
 			$list = $query->fetchAll(PDO::FETCH_CLASS, 'User');
 			
@@ -149,7 +149,7 @@
 		
 		public static function getById($id) {
 			$con = $this->connect();
-			$sql = "SELECT * FROM ".$table_name." WHERE id=".$con->quote($id);
+			$sql = "SELECT * FROM users WHERE id=".$con->quote($id);
 			$query = $con->query($sql);
 			$query->setFetchMode(PDO::FETCH_CLASS, 'User');
 			
@@ -157,12 +157,32 @@
 		}
 		
 		public static function getByMail($mail) {
-			$con = $this->connect();
-			$sql = "SELECT * FROM ".$table_name." WHERE mail=".$con->quote($mail);
+			$con = self::connect();
+			$sql = "SELECT * FROM users WHERE mail=".$con->quote($mail);
 			$query = $con->query($sql);
 			$query->setFetchMode(PDO::FETCH_CLASS, 'User');
 			
 			return $query->fetch();
+		}
+		
+		public function getJsonProperties() {
+			$jsonObj = '{"content": {';
+			$i = 1;
+			
+			foreach($this as $key => $value) {
+				if(($key != 'errors') && ($key != 'exceptions') && ($key != 'table_name')) {
+					if($i > 1) {
+						$jsonObj .= ', ';
+					}
+					
+					$jsonObj .= '"'.$key.'": "'.$value.'"';
+					$i++;
+				}
+			}
+			
+			$jsonObj .= '}}';
+			
+			return $jsonObj;
 		}
 		
 		public function update($properties) {

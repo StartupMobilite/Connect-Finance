@@ -3,19 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ConnectFinance_1.Connexion">
 	<ContentPage.Content>
-		<StackLayout  HorizontalOptions="CenterAndExpand" HeightRequest="45" WidthRequest="60">
+		<StackLayout  HorizontalOptions="CenterAndExpand" HeightRequest="45">
 			<StackLayout.Children>
 				<Label Text="Logo" VerticalOptions="Start"/>
 				<StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
 					<StackLayout.Children>
+            <Label Text="" x:Name="Error" TextColor="Red" />
 						<Entry x:Name="adresse_mail" Placeholder="Adresse mail"/>
-						<Entry x:Name="password" Placeholder="Mot de passe"/>
+						<Entry x:Name="password" IsPassword="True" Placeholder="Mot de passe"/>
 						<Button x:Name="validerBtn" Text="Valider" Clicked="ValiderBtn_OnClicked"/>
 					</StackLayout.Children>
 				</StackLayout>
-				<Button x:Name="btnFb" Clicked="BtnFb_OnClicked" Image="Facebook.png" />
-				<Button x:Name="btnLnkd" Text="LinkedIn" Clicked="BtnLnkd_OnClicked"/>
-				<Button x:Name="btnGP" Text="Google" Clicked="BtnGP_OnClicked"/>
+        <StackLayout Orientation="Horizontal">
+          <StackLayout.Children>
+            <Button x:Name="btnFb" Clicked="BtnFb_OnClicked" Image="Facebook.png" BackgroundColor="Transparent" />
+            <Button x:Name="btnLnkd" Clicked="BtnLnkd_OnClicked" Image="Linkedin.png" BackgroundColor="Transparent" />
+            <Button x:Name="btnGP" Clicked="BtnGP_OnClicked" Image="GooglePlus.png" BackgroundColor="Transparent" />
+          </StackLayout.Children>
+        </StackLayout>
 			</StackLayout.Children>
 		</StackLayout>
 	</ContentPage.Content>
