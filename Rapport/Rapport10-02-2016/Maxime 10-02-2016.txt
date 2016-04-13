@@ -1,0 +1,5 @@
+- Je me suis mis à travailler sur le design de l'application
+
+- J'ai commencé par la page d'accueil de l'application. En changeant l'arrière-plan ainsi que la taille et la couleur des boutons.
+
+- Après ça, j'ai enchainé avec le fichier connexion avec l'ajoût de Logo sur le bouton Facebook. 

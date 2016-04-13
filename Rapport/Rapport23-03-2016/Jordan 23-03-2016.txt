@@ -1,0 +1,4 @@
+-> Implémentation du module "se souvenir de moi" (donc le code lorsque l'on passe le switch a true sur connexion.xaml, le code dans landing qui lit le dossier Log, et le bouton déconnexion dans UsrParametre pour supprimer le fichier log.json) 
+
+-> Comencement de l'implémentation de la map
+
