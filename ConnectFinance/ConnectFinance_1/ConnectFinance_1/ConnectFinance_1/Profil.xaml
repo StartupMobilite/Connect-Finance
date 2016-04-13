@@ -5,11 +5,22 @@
 	<ContentPage.Content>
 		<Grid>
 			<Grid.Children>
-				<StackLayout VerticalOptions="FillAndExpand">
-					<Button x:Name="btnChangeInfo" Text="Changer mes informations" Clicked="BtnChangeInfo_OnClicked"/>
-					<Button x:Name="btnUploadCv" Text="Charger votre CV" Clicked="BtnUploadCV_OnClicked"/>
-					<Button x:Name="btnUploadLM" Text="Charger votre lettre de motivation" Clicked="BtnUploadLM_OnClicked"/>
-					<Button x:Name="btnDeconnexion" Text="Me déconnecter" Clicked="BtnDeconnexion_OnClicked"/>
+				<StackLayout VerticalOptions="FillAndExpand" HeightRequest="150" BackgroundColor="#3399E7" Padding="50">
+          <StackLayout  Padding="0,25,0,0" Orientation="Vertical">
+            <Button x:Name="btnChangeInfo" Text="Changer mes informations" Clicked="BtnChangeInfo_OnClicked" BackgroundColor="#E1E6FA" TextColor="Black"/>
+          </StackLayout>
+          <StackLayout  Padding="0,25,0,0" Orientation="Vertical">
+            <Button x:Name="btnUploadCv" Text="Charger votre CV" Clicked="BtnUploadCV_OnClicked" BackgroundColor="#E1E6FA" TextColor="Black"/>
+          </StackLayout>
+          <StackLayout  Padding="0,25,0,0" Orientation="Vertical">
+            <Button x:Name="btnUploadLM" Text="Charger votre lettre de motivation" Clicked="BtnUploadLM_OnClicked" BackgroundColor="#E1E6FA" TextColor="Black"/>
+          </StackLayout>
+          <StackLayout  Padding="0,25,0,0" Orientation="Vertical">
+            <Button x:Name="btnDeconnexion" Text="Me déconnecter" Clicked="BtnDeconnexion_OnClicked" BackgroundColor="#E1E6FA" TextColor="Black"/>
+          </StackLayout>
+					
+					
+					
 				</StackLayout>
 			</Grid.Children>
 		</Grid>

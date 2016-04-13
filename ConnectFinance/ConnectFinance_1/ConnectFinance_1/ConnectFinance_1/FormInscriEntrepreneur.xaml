@@ -3,19 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ConnectFinance_1.FormInscriEntrepreneur">
 	<ContentPage.Content>
-		<StackLayout>
+		<StackLayout BackgroundColor="#3399E7">
 			<StackLayout.Children>
 				<Label Text="Logo" VerticalOptions="Start"/>
 				<StackLayout>
 					<StackLayout.Children>
-						<Entry x:Name="nom" Placeholder="Nom"/>
-						<Entry x:Name="prenom" Placeholder="Prenom"/>
-						<Entry x:Name="mail" Placeholder="E-mail"/>
-						<Entry x:Name="conf_mail" Placeholder="Confirmation e-mail"/>
-						<Entry x:Name="password" Placeholder="Mot de passe"/>
-						<Entry x:Name="conf_password" Placeholder="Confirmation mot de passe"/>
-						<Entry x:Name="societe" Placeholder="Nom de votre société"/>
- 						<Button x:Name="validation" Text="Valider" Clicked="Validation_OnClicked"/>
+            <StackLayout Padding="0,25,0,0" Orientation="Vertical">
+              <Entry x:Name="nom" Placeholder="Nom" BackgroundColor="#E1E6FA" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Padding="0,25,0,0" Orientation="Vertical">
+              <Entry x:Name="prenom" Placeholder="Prenom" BackgroundColor="#E1E6FA" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Padding="0,25,0,0" Orientation="Vertical">
+              <Entry x:Name="mail" Placeholder="E-mail" BackgroundColor="#E1E6FA" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Padding="0,25,0,0" Orientation="Vertical">
+              <Entry x:Name="conf_mail" Placeholder="Confirmation e-mail" BackgroundColor="#E1E6FA" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Padding="0,25,0,0" Orientation="Vertical">
+              <Entry x:Name="password" Placeholder="Mot de passe" BackgroundColor="#E1E6FA" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Padding="0,25,0,0" Orientation="Vertical">
+              <Entry x:Name="conf_password" Placeholder="Confirmation mot de passe" BackgroundColor="#E1E6FA" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Padding="0,25,0,0" Orientation="Vertical"> 
+              <Entry x:Name="societe" Placeholder="Nom de votre société" BackgroundColor="#E1E6FA" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Padding="0,25,0,0" Orientation="Vertical">
+              <Button x:Name="validation" Text="Valider" Clicked="Validation_OnClicked" BackgroundColor="#E1E6FA" TextColor="Black"/>
+            </StackLayout>
 					</StackLayout.Children>
 				</StackLayout>
 			</StackLayout.Children>

@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ConnectFinance_1.Inscription">
 	<ContentPage.Content>
-		<StackLayout BackgroundColor="White">
+		<StackLayout BackgroundColor="#3399E7">
 		<StackLayout.Children>
 			<Label Text="Logo" VerticalOptions="Start"/>
-			<StackLayout VerticalOptions="CenterAndExpand">
+      <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" WidthRequest="250" HeightRequest="250">
 				<StackLayout.Children>
-					<Button x:Name="btnEntrepreneur" Text="Je suis un nouvel entrepreneur" Clicked="BtnEntrepreneur_OnClicked"></Button>
-					<Button x:Name="btnInvestisseur" Text="Je suis un nouvel investisseur" Clicked="BtnInvestisseur_OnClicked"></Button>
+					<Button x:Name="btnEntrepreneur" Text="Je suis un nouvel entrepreneur" Clicked="BtnEntrepreneur_OnClicked" BackgroundColor="#E1E6FA" TextColor="Black"></Button>
+					<Button x:Name="btnInvestisseur" Text="Je suis un nouvel investisseur" Clicked="BtnInvestisseur_OnClicked" BackgroundColor="#E1E6FA" TextColor="Black"></Button>
 				</StackLayout.Children>
 			</StackLayout>
 		</StackLayout.Children>

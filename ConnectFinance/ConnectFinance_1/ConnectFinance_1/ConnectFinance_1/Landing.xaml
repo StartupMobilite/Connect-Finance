@@ -3,14 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ConnectFinance_1.Landing">
   <ContentPage.Content>
-    <Grid BackgroundColor="Black">
+    <Grid BackgroundColor="#3399E7">
       <StackLayout>
         <StackLayout.Children>
-          <Label Text="Logo" VerticalOptions="Start" />
+          <Label Text="Logo" VerticalOptions="Start"/>
           <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" WidthRequest="250" HeightRequest="250">
-            <StackLayout.Children>
-              <Button x:Name="btnConnexion" Text="Connexion" Clicked="OnButtonConnexionClicked"></Button>
-              <Button x:Name="btnInscription" Text="Inscription" Clicked="OnButtonInscriptionClicked"></Button>
+            <StackLayout.Children> 
+              <Button x:Name="btnConnexion" Text="Connexion" Clicked="OnButtonConnexionClicked" BackgroundColor="#E1E6FA" TextColor="Black"></Button>
+              <Button x:Name="btnInscription" Text="Inscription" Clicked="OnButtonInscriptionClicked" BackgroundColor="#E1E6FA" TextColor="Black"></Button>
             </StackLayout.Children>
           </StackLayout>
         </StackLayout.Children>
