@@ -1,0 +1,5 @@
+-> Implémentation de la map (fonctionnel sous android, a ajouté la clef sur iOS) 
+-> Tuto C#/Xaml pour Maxime
+-> Presque terminé connexion avec FB (pas de push de code, ça ne fonctionne pas et j'ai testé sur mon autre pc)
+-> Aide déploiement Iphone6/Iphone Simulator avec Nico
+-> Passage de Xamarin 1.3.X a 2.2.X pour moi (dû a la map) + mise a jour de plusieurs package android (tjrs a cause de la map)  
