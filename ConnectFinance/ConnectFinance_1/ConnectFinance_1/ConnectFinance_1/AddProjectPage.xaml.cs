@@ -40,7 +40,7 @@ namespace ConnectFinance_1
             project.creation_date = new DateTime().ToString("YYYY-mm-dd");
             project.amount = amount.Text;
             project.description = description.Text;
-            project.sector = (Sector)SectorPicker.SelectedItem;
+			project.sector = new Sector();
 
             parameters.Add("name", project.name);
             parameters.Add("owner_id", project.owner);

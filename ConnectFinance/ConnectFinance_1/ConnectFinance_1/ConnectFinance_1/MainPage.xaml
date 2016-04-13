@@ -32,7 +32,7 @@
             <Label Text="Test" />
             <Label Text="Test" />
             <Label Text="Test" />
-			<Button x:Name="Contact" Text="Contacter l'offre"></Button> 
+			<Button x:Name="Contact" Text="Contacter l'offre" Clicked="Contact_OnClicked"></Button> 
           </StackLayout>
         </ScrollView>
       </StackLayout>

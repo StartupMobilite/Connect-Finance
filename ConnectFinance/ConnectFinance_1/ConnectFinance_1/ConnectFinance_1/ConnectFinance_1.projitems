@@ -14,7 +14,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Components\BindablePicker.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Connexion.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>Connexion.xaml</DependentUpon>
@@ -68,6 +67,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Providers\FacebookProviders.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SocialNetwork\GooglePlus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SocialNetwork\LinkedIn.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Email.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Connexion.xaml">
