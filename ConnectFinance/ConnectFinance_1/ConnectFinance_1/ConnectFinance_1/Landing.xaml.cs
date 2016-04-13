@@ -66,7 +66,7 @@ namespace ConnectFinance_1
 			}
 			catch (Exception)
 			{
-				await Navigation.PushModalAsync(new Connexion());
+				//await Navigation.PushModalAsync(new Connexion());
 			}
 		}
     }

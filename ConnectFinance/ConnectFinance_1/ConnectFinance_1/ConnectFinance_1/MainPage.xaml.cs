@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ConnectFinance_1.Models;
 using Xamarin.Forms;
+using Plugin.Messaging;
 
 namespace ConnectFinance_1
 {
