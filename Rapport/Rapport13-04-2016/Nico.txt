@@ -1,0 +1,5 @@
+-> Journée pauvre voir très pauvre en commit me concernant.. J’ai passé ma journée à tenter de résoudre le problème de certificat avec IOS sans y parvenir (j’y suis encore…)
+-> Petites modifications visant à rendre le code qui marche sur Android compatible avec iOS (certaines références n’existaient pas sur mac, certains package non plus, etc… Du coup, j’ai fais les petites modifications qui s’imposaient pour que ça marche):
+	-> Référence System.Web.Services sur Mac à la place de System.Web
+	-> Packages CrossGeolocator, Xam.Auth et Xam.Plugins.Messaging remplacés par des components, etc…
+-> pas vraiment eu le temps de me pencher sur autre chose, j’ai du partir à 16h pour un rdv chez l’ophtalmo.
