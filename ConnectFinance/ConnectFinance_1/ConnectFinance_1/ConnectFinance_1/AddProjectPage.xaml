@@ -8,8 +8,16 @@
         <Entry x:Name="nom" Placeholder="Nom du projet"/>
         <Entry x:Name="amount" Placeholder="Financement espéré"/>
         <Label Text="Description :" />
-        <Editor x:Name="description" />
-        <Picker x:Name="SectorPicker" />
+        <Editor x:Name="description" HeightRequest="100" />
+        <Label Text="Secteur d'activité recherché :" />
+        <Picker x:Name="SectorPicker" SelectedIndex="0">
+        	<Picker.Items>
+	            <x:String>Finance</x:String> 
+	            <x:String>Informatique</x:String>
+	            <x:String>Social</x:String> 
+	            <x:String>Artisanat</x:String>
+	        </Picker.Items>
+        </Picker>
         <Button x:Name="validation" Text="Valider" Clicked="Validation_OnClicked"></Button>
       </StackLayout.Children>
     </StackLayout>

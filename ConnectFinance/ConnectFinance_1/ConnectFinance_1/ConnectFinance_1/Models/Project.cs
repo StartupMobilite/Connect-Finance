@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConnectFinance_1.Models
 {
-    class Project
+    public class Project
     {
         public string id { get; set; }
 

@@ -68,8 +68,6 @@ namespace ConnectFinance_1
 
 			        User userObj = Newtonsoft.Json.JsonConvert.DeserializeObject<User>(json["content"].ToString());
 
-                    //TODO: Stockage de userObj dans le fichier de "session" sur le device
-
 				    if (monSwitch.IsToggled == true)
 				    {
 					    responseValue = responseText;

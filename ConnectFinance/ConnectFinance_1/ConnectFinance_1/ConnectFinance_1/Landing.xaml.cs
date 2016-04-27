@@ -62,11 +62,11 @@ namespace ConnectFinance_1
 
 				User userObj = Newtonsoft.Json.JsonConvert.DeserializeObject<User>(json["content"].ToString());
 
-				await Navigation.PushModalAsync(new MainMasterDetailPage());
+				App.Current.MainPage = new NavigationPage(new MasterDetailPage());
 			}
 			catch (Exception)
 			{
-				//await Navigation.PushModalAsync(new Connexion());
+				App.Current.MainPage = new NavigationPage(new Connexion());
 			}
 		}
     }
