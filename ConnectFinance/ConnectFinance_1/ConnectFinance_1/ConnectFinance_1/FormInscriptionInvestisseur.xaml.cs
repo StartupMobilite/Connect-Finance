@@ -94,9 +94,7 @@ namespace ConnectFinance_1
         private async void client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
         {
             //TODO: Redirection vers la page suivante avec un message comme quoi le compte est bien créé + sauvegarde du compte dans une sorte de session C#
-            var modalPage = new ModalAccountHasBeenCreated();
-            await Navigation.PushModalAsync(modalPage);
-            await Navigation.PopModalAsync();
+			App.Current.MainPage = new NavigationPage(new Connexion());
         }
     }
 }

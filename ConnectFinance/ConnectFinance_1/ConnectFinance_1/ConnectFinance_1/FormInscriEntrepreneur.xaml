@@ -12,8 +12,8 @@
 						<Entry x:Name="prenom" Placeholder="Prenom"/>
 						<Entry x:Name="mail" Placeholder="E-mail"/>
 						<Entry x:Name="conf_mail" Placeholder="Confirmation e-mail"/>
-						<Entry x:Name="password" Placeholder="Mot de passe"/>
-						<Entry x:Name="conf_password" Placeholder="Confirmation mot de passe"/>
+						<Entry x:Name="password" Placeholder="Mot de passe" IsPassword="true" />
+						<Entry x:Name="conf_password" Placeholder="Confirmation mot de passe" IsPassword="true" />
 						<Entry x:Name="societe" Placeholder="Nom de votre société"/>
  						<Button x:Name="validation" Text="Valider" Clicked="Validation_OnClicked"/>
 					</StackLayout.Children>

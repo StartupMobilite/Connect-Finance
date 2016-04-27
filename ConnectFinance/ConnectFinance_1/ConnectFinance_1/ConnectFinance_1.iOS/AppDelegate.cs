@@ -24,6 +24,7 @@ namespace ConnectFinance_1.iOS
 		{
 			global::Xamarin.Forms.Forms.Init ();
 			LoadApplication (new ConnectFinance_1.App ());
+			Xamarin.FormsMaps.Init();
 
 			return base.FinishedLaunching (app, options);
 		}

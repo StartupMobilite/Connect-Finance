@@ -9,42 +9,19 @@
                 WinPhone="0, 0, 0, 0" />
 	</ContentPage.Padding>
     <StackLayout>
-      <Label Text="Red" />
+      <Label Text="Projets" HorizontalTextAlignment="Center" />
       <StackLayout>
-        <ScrollView BackgroundColor="Red" VerticalOptions="FillAndExpand" Orientation="Vertical">
-          <StackLayout>
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
-            <Label Text="Test" />
+        <ScrollView BackgroundColor="Black" VerticalOptions="FillAndExpand" Orientation="Vertical">
+          <StackLayout x:Name="Projects_container">
+            <Label x:Name="project_title" TextColor="White" />
+            <Label x:Name="project_description" TextColor="White" />
 			<Button x:Name="Contact" Text="Contacter l'offre" Clicked="Contact_OnClicked"></Button> 
           </StackLayout>
         </ScrollView>
       </StackLayout>
       <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-        <Button Text="Passer" />
-        <Button Text="Ce projet m'intéresse" />
+        <Button Text="Passer" x:Name="Btn_project_not_interested" Clicked="Btn_Project_NInterested_Clicked" />
+        <Button Text="Ce projet m'intéresse" x:Name="Btn_project_interested" Clicked="Btn_Project_Interested_Clicked" />
       </StackLayout>
     </StackLayout>
 </ContentPage>

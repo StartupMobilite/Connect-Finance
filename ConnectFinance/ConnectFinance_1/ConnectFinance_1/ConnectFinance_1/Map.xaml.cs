@@ -14,10 +14,11 @@ namespace ConnectFinance_1
 	{
 		public Map ()
 		{
+
+
 			var map = new Xamarin.Forms.Maps.Map(
 				MapSpan.FromCenterAndRadius(
-					new Position(37, -122), Distance.FromMiles(0.3)))
-			{
+					new Position(48.856614, 2.3522219000000177), Distance.FromMiles(0.3))) {
 				IsShowingUser = true,
 				HeightRequest = 100,
 				WidthRequest = 960,

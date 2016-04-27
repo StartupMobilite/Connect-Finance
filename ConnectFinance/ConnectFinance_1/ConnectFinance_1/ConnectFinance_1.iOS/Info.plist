@@ -42,5 +42,9 @@
 	<string>LaunchScreen.storyboard</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Pouvons nous utiliser votre localisation ?</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Nous utilisons votre localisation actuellement</string>
 </dict>
 </plist>
